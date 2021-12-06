@@ -13,4 +13,8 @@
 
 Route::get('/posts', 'PostController@index');
 Route::get('/', 'PostController@index');
+Route::get('/posts/create', 'PostController@create');
+Route::post('/posts', 'PostController@store');
 Route::get('/posts/{post}', 'PostController@show');
+//
+//一番左がwebのurlの最後の部分　右の部分がpostcontrollerのshowメソッドに飛んでいる(public function show(Post $post))にあたる
