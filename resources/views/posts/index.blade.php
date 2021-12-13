@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>Blog Name</h1>
+        <!--classはcssのデザインを作る時に使用するhret＝リンク先web URLを指定する-->
         <p class='create'>[<a href='/posts/create'>create</a>]</p>
         <div class='posts'>
             @foreach ($posts as $post)
@@ -24,3 +24,4 @@
         </div>
     </body>
 </html>
+<!--index.blade.phpが投稿一覧の見た目とリンクしている-->
