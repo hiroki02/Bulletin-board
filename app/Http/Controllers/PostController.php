@@ -39,5 +39,10 @@ class PostController extends Controller
 
         return redirect('/posts/' . $post->id);
     }
+    public function delete(Post $post)
+    {
+        $post->delete();
+        return redirect('/');
+    }
 }
-//view関数はresourcesのviewフォルダを探す$postをpostを与える(連想配列として左の値をキーとして右の値を取得する)
+//view関数はresourcesのviewsフォルダ内を探す$postをpostを与える(連想配列として左の値をキーとして右の値を取得する)
